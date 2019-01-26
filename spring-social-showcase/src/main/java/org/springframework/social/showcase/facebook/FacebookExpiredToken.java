@@ -22,9 +22,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class FacebookExpiredToken {
 
-	@RequestMapping("/facebook/expired")
-	public void simulateExpiredToken() {
-		throw new ExpiredAuthorizationException("facebook");
-	}
-	
+    @RequestMapping("/facebook/expired")
+    public void simulateExpiredToken() {
+        throw new ExpiredAuthorizationException("facebook");
+    }
+
 }

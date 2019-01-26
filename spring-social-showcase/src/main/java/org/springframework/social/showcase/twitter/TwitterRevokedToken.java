@@ -22,9 +22,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class TwitterRevokedToken {
 
-	@RequestMapping("/twitter/revoked")
-	public void simulateExpiredToken() {
-		throw new ExpiredAuthorizationException("twitter");
-	}
-	
+    @RequestMapping("/twitter/revoked")
+    public void simulateExpiredToken() {
+        throw new ExpiredAuthorizationException("twitter");
+    }
+
 }
